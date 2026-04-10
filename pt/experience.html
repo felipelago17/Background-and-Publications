@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiência | Felipe Villasuso Lago</title>
+  <meta name="description" content="Histórico profissional." />
+  <meta name="author" content="Felipe Villasuso Lago" />
+  <link rel="alternate" hreflang="en" href="https://felipelago17.github.io/Background-and-Publications/experience.html" />
+  <link rel="alternate" hreflang="pt" href="https://felipelago17.github.io/Background-and-Publications/pt/experience.html" />
+  <link rel="alternate" hreflang="es" href="https://felipelago17.github.io/Background-and-Publications/es/experience.html" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Felipe Villasuso Lago</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav(this)">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="experience.html" class="active" aria-current="page">Experiência</a></li>
+        <li><a href="publications.html">Publicações</a></li>
+        <li><a href="research.html">Pesquisa</a></li>
+        <li><a href="contact.html">Contato</a></li>
+        <li><a href="../index.html">English</a></li>
+        <li><a href="../es/index.html">Spanish</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Experiência</h1>
+    <p>Tradução automática com estrutura de página preparada para conteúdo completo.</p>
+  </header>
+
+  <main id="main-content" class="content-wrapper">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Início</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Experiência</span>
+    </nav>
+
+    <section aria-labelledby="intro-heading">
+      <h2 id="intro-heading" class="section-title">Experiência</h2>
+      <div class="card">
+        <p class="lead">Página de experiência profissional em português (tradução automática). Conteúdo completo em preparação.</p>
+        <p>Para a versão completa em inglês, acesse <a href="../index.html">../index.html</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/felipe-villasuso-lago-54047a122/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://orcid.org/0009-0002-0542-3216" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://lsbu.academia.edu/FelipeLago" target="_blank" rel="noopener">Academia.edu</a>
+        <a href="https://www.researchgate.net/profile/Felipe-Villasuso-Lago" target="_blank" rel="noopener">ResearchGate</a>
+      </div>
+      <p>&copy; <span id="year"></span> Felipe Villasuso Lago. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function toggleNav(btn) {
+      var links = document.getElementById('nav-links');
+      var open  = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+</body>
+</html>
